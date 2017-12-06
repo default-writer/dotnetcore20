@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetcoremvc", "dotnetcore
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetcoreef", "dotnetcoreef\dotnetcoreef.csproj", "{804338F1-0231-4A74-944B-C41881CC3760}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "dbnpgsql", "dbnpgsql\dbnpgsql.sqlproj", "{D9154190-14C8-49EB-B03A-EC84FBE00D2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{804338F1-0231-4A74-944B-C41881CC3760}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{804338F1-0231-4A74-944B-C41881CC3760}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{804338F1-0231-4A74-944B-C41881CC3760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9154190-14C8-49EB-B03A-EC84FBE00D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9154190-14C8-49EB-B03A-EC84FBE00D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9154190-14C8-49EB-B03A-EC84FBE00D2F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D9154190-14C8-49EB-B03A-EC84FBE00D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9154190-14C8-49EB-B03A-EC84FBE00D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9154190-14C8-49EB-B03A-EC84FBE00D2F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
