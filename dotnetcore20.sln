@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetcore20", "dotnetcore20.csproj", "{ECFBD7E2-7108-4F9C-B843-B214266EA379}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetcoremvc", "dotnetcoremvc\dotnetcoremvc.csproj", "{0728E3D4-AF5F-4507-B3CB-4AA8C45D1FB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetcoreef", "dotnetcoreef\dotnetcoreef.csproj", "{804338F1-0231-4A74-944B-C41881CC3760}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetcoreef", "dotnetcoreef\dotnetcoreef.csproj", "{804338F1-0231-4A74-944B-C41881CC3760}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "dbnpgsql", "dbnpgsql\dbnpgsql.sqlproj", "{D9154190-14C8-49EB-B03A-EC84FBE00D2F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnetcore20", "dotnetcore\dotnetcore20.csproj", "{5679EC15-B46E-4E6C-BB8C-16E097EAAD7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ECFBD7E2-7108-4F9C-B843-B214266EA379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ECFBD7E2-7108-4F9C-B843-B214266EA379}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ECFBD7E2-7108-4F9C-B843-B214266EA379}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ECFBD7E2-7108-4F9C-B843-B214266EA379}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0728E3D4-AF5F-4507-B3CB-4AA8C45D1FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0728E3D4-AF5F-4507-B3CB-4AA8C45D1FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0728E3D4-AF5F-4507-B3CB-4AA8C45D1FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +31,10 @@ Global
 		{D9154190-14C8-49EB-B03A-EC84FBE00D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9154190-14C8-49EB-B03A-EC84FBE00D2F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D9154190-14C8-49EB-B03A-EC84FBE00D2F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5679EC15-B46E-4E6C-BB8C-16E097EAAD7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5679EC15-B46E-4E6C-BB8C-16E097EAAD7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5679EC15-B46E-4E6C-BB8C-16E097EAAD7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5679EC15-B46E-4E6C-BB8C-16E097EAAD7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
