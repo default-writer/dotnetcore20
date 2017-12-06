@@ -1,0 +1,11 @@
+﻿@page
+@model dotnetcore20.Pages.TestModel
+@{
+    ViewData["Title"] = "Test";
+}
+
+<h2>Test</h2>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

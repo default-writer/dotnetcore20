@@ -1,0 +1,3 @@
+@using dotnetcore20
+@namespace dotnetcore20.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
