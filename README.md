@@ -41,7 +41,7 @@ This tutorial uses a **Northwind** database on your PostgreSQL instance as the e
 * Enter **thewindisblowing** as the *Password*
 * The Northwind database is now displayed under **Data Connections** in **Server Explorer**
 
-[!code-sql[Main](../dbnpgsql/northwind.sql)]
+[!code-sql[Main](dbnpgsql/northwind.sql)]
 
 ## Create a new project
 
