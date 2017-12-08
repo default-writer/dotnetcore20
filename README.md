@@ -42,7 +42,6 @@ This tutorial uses a **Northwind** database on your PostgreSQL instance as the e
 * The Northwind database is now displayed under **Data Connections** in **Server Explorer**
 
 [!code-sql[Main](dbnpgsql/northwind.sql)]
-
 ## Create a new project
 
 * Open Visual Studio 2017
@@ -71,20 +70,23 @@ We will be using some ASP.NET Core Scaffolding tools to create controllers and v
 
 * Run `Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design`
 
+## Fix .NET Core 2.0 project issues
+* [Project file](/dotnetcoremvc/dotnetcoremvc.csproj)
+
 ## Reverse engineer your model
 
 Now it's time to create the EF model based on your existing database.
 
 *Before you start, make shure you added some sections to *.cspoj file:
 * [Add autogenerate binding redirects](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-entity-framework-core-2-0)
-* Set AutoGenerateBindingRedirects flag to true in PropertyGroup
+  * Set AutoGenerateBindingRedirects flag to true in PropertyGroup
 * [Add Microsoft.EntityFrameworkCore and dependencies](https://docs.microsoft.com/en-us/ef/core/get-started/aspnetcore/existing-db#blogging-database)
-* Install-Package Npgsql.EntityFrameworkCore.PostgreSQL
-* Install-Package Microsoft.EntityFrameworkCore
-* Install-Package Microsoft.EntityFrameworkCore
-* Install-Package Microsoft.EntityFrameworkCore.Relational
-* Install-Package Microsoft.EntityFrameworkCore.SqlServer
-* Install-Package Microsoft.EntityFrameworkCore.Tools
+  * Install-Package Npgsql.EntityFrameworkCore.PostgreSQL
+  * Install-Package Microsoft.EntityFrameworkCore
+  * Install-Package Microsoft.EntityFrameworkCore
+  * Install-Package Microsoft.EntityFrameworkCore.Relational
+  * Install-Package Microsoft.EntityFrameworkCore.SqlServer
+  * Install-Package Microsoft.EntityFrameworkCore.Tools
 
 * **Tools –> NuGet Package Manager –> Package Manager Console**
 * Run the following command to create a model from the existing database:
