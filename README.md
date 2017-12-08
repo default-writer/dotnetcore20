@@ -83,7 +83,6 @@ Now it's time to create the EF model based on your existing database.
 * [Add Microsoft.EntityFrameworkCore and dependencies](https://docs.microsoft.com/en-us/ef/core/get-started/aspnetcore/existing-db#blogging-database)
   * Install-Package Npgsql.EntityFrameworkCore.PostgreSQL
   * Install-Package Microsoft.EntityFrameworkCore
-  * Install-Package Microsoft.EntityFrameworkCore
   * Install-Package Microsoft.EntityFrameworkCore.Relational
   * Install-Package Microsoft.EntityFrameworkCore.SqlServer
   * Install-Package Microsoft.EntityFrameworkCore.Tools
