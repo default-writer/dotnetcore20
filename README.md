@@ -1,11 +1,5 @@
 # dotnetcore20
 
----
-title: Getting Started on ASP.NET Core - Existing Database - EF Core - PostgreSQL DB
-author: hack2root
-uid: core/get-started/aspnetcore/existing-db
----
-
 # Getting Started with EF Core on ASP.NET Core with an Existing Database (PostgreSQL)
 
 > [!IMPORTANT]  
@@ -35,9 +29,9 @@ This tutorial uses a **Northwind** database on your PostgreSQL instance as the e
 > [!TIP]  
 > If you have already created the **Northwind** database as part of another tutorial, you can skip these steps.
 * Install PostgreSQL Northwind database
-  * ** Open solution folder dbnpgsql
-  * ** Set PostgreSQL system environment variables PGUSER, PGPASSWORD
-  * ** Run install.cmd as administrator
+  * Open solution folder dbnpgsql
+  * Set PostgreSQL system environment variables PGUSER, PGPASSWORD
+  * Run install.cmd as administrator
 * Open Visual Studio
 * **Tools -> Connect to Database...**
 * Select **Postgre SQL Database** and click **Continue**
@@ -63,7 +57,7 @@ This tutorial uses a **Northwind** database on your PostgreSQL instance as the e
 
 ## Install Entity Framework
 
-To use EF Core, install the package for the database provider(s) you want to target. This walkthrough uses SQL Server. For a list of available providers see [Database Providers](../../providers/index.md).
+To use EF Core, install the package for the database provider(s) you want to target. This walkthrough uses PostgreSQL Server.
 
 * **Tools > NuGet Package Manager > Package Manager Console**
 
@@ -83,14 +77,14 @@ Now it's time to create the EF model based on your existing database.
 
 *Before you start, make shure you added some sections to *.cspoj file:
 * [Add autogenerate binding redirects](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-entity-framework-core-2-0)
-* **  <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects> in <PropertyGroup> 
+* Set AutoGenerateBindingRedirects flag to true in PropertyGroup
 * [Add Microsoft.EntityFrameworkCore and dependencies](https://docs.microsoft.com/en-us/ef/core/get-started/aspnetcore/existing-db#blogging-database)
-* ** Add <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.0.0" />
-* ** Add <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
-* ** Add <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
-* ** Add <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
-* ** Add <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
-* ** Add <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" />
+* Install-Package Npgsql.EntityFrameworkCore.PostgreSQL
+* Install-Package Microsoft.EntityFrameworkCore
+* Install-Package Microsoft.EntityFrameworkCore
+* Install-Package Microsoft.EntityFrameworkCore.Relational
+* Install-Package Microsoft.EntityFrameworkCore.SqlServer
+* Install-Package Microsoft.EntityFrameworkCore.Tools
 
 * **Tools –> NuGet Package Manager –> Package Manager Console**
 * Run the following command to create a model from the existing database:
